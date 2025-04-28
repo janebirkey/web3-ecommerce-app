@@ -1,0 +1,30 @@
+server:
+  port: 8080
+  mode: debug # debug, release, test
+  timeout: 10s
+
+database:
+  driver: mysql
+  host: localhost
+  port: 3306
+  username: root
+  password: 123456
+  dbname: web3_ecommerce
+  max_open_conns: 100
+  max_idle_conns: 10
+  conn_max_lifetime: 1h
+
+redis:
+  host: localhost
+  port: 6379
+  password: ""
+  db: 0
+
+jwt:
+  secret: KFCV50
+  expire_hours: 720
+
+web3:
+  rpc_url: https://goerli.infura.io/v3/your-api-key
+  chain_id: 5 # Goerli testnet
+  nonce_expire: 5m 
